@@ -1,38 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gauri Maheshwari | Biology-Chemistry</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-    <div class="container">
-        <h1>Gauri Maheshwari</h1>
-        <p>Student | Research Enthusiast</p>
-
-        <section>
-            <h2>About Me</h2>
-            <p>Write your summary here.</p>
-        </section>
-
-        <section>
-            <h2>Education</h2>
-            <p>Your degree details</p>
-        </section>
-
-        <section>
-            <h2>Skills</h2>
-            <ul>
-                <li>Skill 1</li>
-                <li>Skill 2</li>
-            </ul>
-        </section>
-
-        <a href="resume.pdf" download>Download Resume</a>
+  <nav id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo"><i class="fas fa-flask"></i>Gauri</div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
+  </nav>
 
-<script src="script.js"></script>
+  <section id="hero">
+    <div class="hero-bg-art">
+      <div class="hero-shape"></div>
+      <div class="hero-shape"></div>
+      <div class="hero-shape"></div>
+      <div class="molecule"><div class="molecule-inner"></div></div>
+      <div class="molecule"><div class="molecule-inner"></div></div>
+      <div class="molecule"><div class="molecule-inner"></div></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Gauri <span class="highlight">Maheshwari</span></h1>
+      <p class="hero-sub">Biology-Chemistry pre-majors, 2nd Year BS-MS Student</p>
+      <p class="hero-tagline">
+        Integrated BS-MS student at <strong>IISER Mohali</strong> &mdash; drawn to the
+        elegance of molecular interactions, the precision of spectroscopic techniques,
+        and the promise of understanding life through the lens of chemistry and biology.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fas fa-flask"></i> Explore My Work
+        </a>
+        <a href="resume.pdf" class="btn btn-outline" download>
+          <i class="fas fa-file-lines"></i> Resume
+        </a>
+        <a href="#contact" class="btn btn-coral">
+          <i class="fas fa-paper-plane"></i> Connect
+        </a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <section id="about">
+    <p class="section-label reveal">01. About Me</p>
+    <h2 class="section-title reveal">Rooted in curiosity, <span class="hl">driven by purpose</span></h2>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>
+          I'm <strong>Gauri Maheshwari</strong>, a Biology-Chemistry pre-majors student
+          in my 2nd year of the Integrated BS-MS programme at
+          <strong>IISER Mohali</strong>. My journey began with a fascination for
+          understanding how molecules shape life &mdash; from the quantum dance of electrons
+          in a spectroscopic measurement to the elegant complexity of ecological networks.
+        </p>
+        <p>
+          I believe the most meaningful science happens at the intersection of
+          disciplines &mdash; where chemistry meets biology, where data meets
+          discovery, where curiosity meets rigor. I thrive on learning new
+          techniques, whether it's analyzing plant functional traits in the
+          Western Ghats or exploring the principles of satellite interferometry.
+        </p>
+        <p>
+          I'm actively seeking research opportunities where I can contribute to
+          projects in ecology, spectroscopy, or interdisciplinary science.
+          If you're working on something fascinating, let's talk.
+        </p>
+      </div>
+      <div class="about-stats reveal reveal-delay-1">
+        <div class="stat-card">
+          <div class="stat-number">9.43</div>
+          <div class="stat-label">CPI (3 semesters)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">98.3%</div>
+          <div class="stat-label">Class 12 (Inter)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">97.6%</div>
+          <div class="stat-label">Class 10 (Matric)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">3+</div>
+          <div class="stat-label">Projects</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="bg-secondary">
+    <p class="section-label reveal">02. Education</p>
+    <h2 class="section-title reveal">The path I'm <span class="hl">walking</span></h2>
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <p class="timeline-date">2024 &mdash; Present</p>
+        <h3 class="timeline-title">Integrated BS-MS Dual Degree</h3>
+        <p class="timeline-institution">IISER Mohali</p>
+        <p class="timeline-desc">
+          Biology-Chemistry pre-majors. CPI: 9.43 across 3 semesters.
+          Coursework spans genetics, evolution, spectroscopy, soft matter,
+          statistical analysis, and programming.
+        </p>
+      </div>
+      <div class="timeline-item reveal reveal-delay-1">
+        <div class="timeline-dot"></div>
+        <p class="timeline-date">2022 &mdash; 2024</p>
+        <h3 class="timeline-title">TSBIE Inter (Class 11 &amp; 12)</h3>
+        <p class="timeline-institution">Excellencia Junior College, Suchitra, Hyderabad</p>
+        <p class="timeline-desc">
+          Percentage: 98.3%. Built a strong foundation in biology, chemistry, and physics.
+        </p>
+      </div>
+      <div class="timeline-item reveal reveal-delay-2">
+        <div class="timeline-dot"></div>
+        <p class="timeline-date">2022</p>
+        <h3 class="timeline-title">CBSE Class 10 (Matriculation)</h3>
+        <p class="timeline-institution">DAV Public School, BRS Nagar, Ludhiana, Punjab</p>
+        <p class="timeline-desc">
+          Percentage: 97.6%.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="bg-card-bg">
+    <p class="section-label reveal">03. Experience</p>
+    <h2 class="section-title reveal">Where I've <span class="hl">grown</span></h2>
+    <div class="experience-card reveal">
+      <div class="exp-icon"><i class="fas fa-leaf"></i></div>
+      <div class="exp-content">
+        <p class="exp-date">May 2025 &mdash; July 2025</p>
+        <h3>Summer Intern, BEER Lab</h3>
+        <p class="exp-institution">National Centre for Biological Sciences (NCBS)</p>
+        <p class="exp-desc">
+          Worked under <strong>Prof. Mahesh Sankaran</strong> on morphological and
+          physiological functional traits of plants as a part of the
+          <strong>Long-term Ecosystem Monitoring (LEMon) Project</strong>. This project
+          aims to understand how plant community structure and function respond to
+          environmental gradients and climate change.
+        </p>
+        <div class="exp-details">
+          <span class="exp-tag"><i class="fas fa-chart-bar"></i> Data Analysis (Excel, R)</span>
+          <span class="exp-tag"><i class="fas fa-microscope"></i> LECO Instrumentation</span>
+          <span class="exp-tag"><i class="fas fa-image"></i> ImageJ Quantification</span>
+          <span class="exp-tag"><i class="fas fa-tree"></i> Field Ecology in Western Ghats</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="bg-surface">
+    <p class="section-label reveal">04. Projects</p>
+    <h2 class="section-title reveal">Things I've <span class="hl">built</span></h2>
+    <div class="projects-grid">
+      <div class="project-card reveal">
+        <div class="project-header">
+          <div class="project-icon"><i class="fas fa-satellite"></i></div>
+          <h3>Satellite Interferometry</h3>
+          <p class="project-sub">Foundation Day Project &mdash; Robotics Club</p>
+          <p>
+            Explored the principles and applications of satellite radio sensing
+            technology. Demonstrated the functionality and design of the project
+            to school students.
+          </p>
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">Radio Sensing</span>
+          <span class="project-tag">Robotics</span>
+          <span class="project-tag">Outreach</span>
+        </div>
+      </div>
+      <div class="project-card reveal reveal-delay-1">
+        <div class="project-header">
+          <div class="project-icon"><i class="fas fa-book-open"></i></div>
+          <h3>Meraki &mdash; Annual Science Magazine</h3>
+          <p class="project-sub">Design Team, 2025 &amp; 2026</p>
+          <p>
+            Designed the Chemistry section (2025) on active polymers and the
+            Physics section (2026) on biomedical applications of the coffee
+            ring effect for IISER Mohali's annual science magazine.
+          </p>
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">Design</span>
+          <span class="project-tag">Science Communication</span>
+        </div>
+      </div>
+      <div class="project-card reveal reveal-delay-2">
+        <div class="project-header">
+          <div class="project-icon"><i class="fas fa-seedling"></i></div>
+          <h3>Horticulture Redevelopment</h3>
+          <p class="project-sub">Committee Project, 2025</p>
+          <p>
+            Proposed plans and methodologies for the redevelopment of the
+            plantscape of the IISER Mohali campus.
+          </p>
+        </div>
+        <div class="project-tags">
+          <span class="project-tag">Ecology</span>
+          <span class="project-tag">Campus Development</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="bg-card-bg">
+    <p class="section-label reveal">05. Skills</p>
+    <h2 class="section-title reveal">Tools I work <span class="hl">with</span></h2>
+    <div class="skills-grid">
+      <div class="skill-category reveal">
+        <h3><i class="fas fa-chart-line"></i> Data Analysis</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">R Programming (ggplot2)</span>
+          <span class="skill-tag">Statistical Tests</span>
+          <span class="skill-tag">Python (matplotlib)</span>
+          <span class="skill-tag">Python (numPy basics)</span>
+          <span class="skill-tag">Microsoft Excel</span>
+        </div>
+      </div>
+      <div class="skill-category reveal reveal-delay-1">
+        <h3><i class="fas fa-microscope"></i> Laboratory Techniques</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Pipetting</span>
+          <span class="skill-tag">Microscopy</span>
+          <span class="skill-tag">Centrifugation</span>
+          <span class="skill-tag">Cell Plating</span>
+          <span class="skill-tag">Titration</span>
+          <span class="skill-tag">Distillation &amp; Filtration</span>
+          <span class="skill-tag">Crystallization</span>
+          <span class="skill-tag">LECO Sample Preparation</span>
+        </div>
+      </div>
+      <div class="skill-category reveal reveal-delay-2">
+        <h3><i class="fas fa-wave-square"></i> Spectroscopy &amp; Imaging</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">NMR Spectroscopy</span>
+          <span class="skill-tag">Raman Spectroscopy</span>
+          <span class="skill-tag">UV-Vis Spectroscopy</span>
+          <span class="skill-tag">IR Spectroscopy</span>
+          <span class="skill-tag">ImageJ</span>
+        </div>
+      </div>
+      <div class="skill-category reveal reveal-delay-3">
+        <h3><i class="fas fa-feather"></i> Professional</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Scientific Writing</span>
+          <span class="skill-tag">Design &amp; Layout</span>
+          <span class="skill-tag">Team Collaboration</span>
+          <span class="skill-tag">Field Ecology</span>
+          <span class="skill-tag">Science Outreach</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="achievements" class="bg-surface">
+    <p class="section-label reveal">06. Beyond the Classroom</p>
+    <h2 class="section-title reveal">Leadership &amp; <span class="hl">achievements</span></h2>
+    <div class="achievements-grid">
+      <div class="achieve-card reveal">
+        <div class="achieve-icon"><i class="fas fa-trophy"></i></div>
+        <h3>Academic Excellence Award</h3>
+        <p>IISER Mohali &mdash; 2026 (Semester 3)</p>
+      </div>
+      <div class="achieve-card reveal reveal-delay-1">
+        <div class="achieve-icon"><i class="fas fa-paint-brush"></i></div>
+        <h3>Design Head</h3>
+        <p>Tattva, IISER Mohali's Annual Science Fest &mdash; 2026</p>
+      </div>
+      <div class="achieve-card reveal reveal-delay-2">
+        <div class="achieve-icon"><i class="fas fa-pen-fancy"></i></div>
+        <h3>Junior Editor</h3>
+        <p>Manthan (College Magazine)</p>
+      </div>
+      <div class="achieve-card reveal reveal-delay-3">
+        <div class="achieve-icon"><i class="fas fa-users"></i></div>
+        <h3>Core Committee Member</h3>
+        <p>Chemistry Club, Ecology Club, Social Welfare Club</p>
+      </div>
+      <div class="achieve-card reveal reveal-delay-4">
+        <div class="achieve-icon"><i class="fas fa-music"></i></div>
+        <h3>Core Volunteer</h3>
+        <p>Graphic Design &amp; Marketing, Insomnia (Cultural Fest) &mdash; 2025</p>
+      </div>
+      <div class="achieve-card reveal reveal-delay-4">
+        <div class="achieve-icon"><i class="fas fa-dna"></i></div>
+        <h3>Relevant Coursework</h3>
+        <p>Python, Statistics, Genetics, Spectroscopy, Soft Matter, Evolution</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <p class="section-label reveal">07. Contact</p>
+    <h2 class="section-title reveal">Let's <span class="hl">connect</span></h2>
+    <p class="contact-desc reveal">
+      I'm always open to conversations about science, research collaborations,
+      or just exchanging ideas. Feel free to reach out!
+    </p>
+    <div class="contact-links">
+      <a href="mailto:ms24275@iisermohali.com" class="contact-item reveal reveal-delay-1">
+        <i class="fas fa-envelope"></i>
+        <div>
+          <div class="contact-label">Email</div>
+          <div class="contact-value">ms24275@iisermohali.com</div>
+        </div>
+      </a>
+      <a href="mailto:gaurimahe29@gmail.com" class="contact-item reveal reveal-delay-2">
+        <i class="fas fa-envelope"></i>
+        <div>
+          <div class="contact-label">Personal Email</div>
+          <div class="contact-value">gaurimahe29@gmail.com</div>
+        </div>
+      </a>
+      <a href="tel:+919014150301" class="contact-item reveal reveal-delay-3">
+        <i class="fas fa-phone"></i>
+        <div>
+          <div class="contact-label">Phone</div>
+          <div class="contact-value">+91 90141 50301</div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      crafted with <span class="accent">curiosity</span> &middot;
+      &copy; 2026 Gauri Maheshwari
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
