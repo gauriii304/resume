@@ -1,3 +1,49 @@
+// MOUSE FOLLOWER
+document.addEventListener("mousemove", (e) => {
+  document.documentElement.style.setProperty("--x", `${e.clientX}px`);
+  document.documentElement.style.setProperty("--y", `${e.clientY}px`);
+});
+
+// PROGRESS BAR
+window.addEventListener("scroll", () => {
+  const winScroll = document.documentElement.scrollTop;
+  const height =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+
+  const scrolled = (winScroll / height) * 100;
+  document.getElementById("progress-bar").style.width = scrolled + "%";
+});
+
+// TYPEWRITER
+const words = [
+  "Plant Biology Student",
+  "Research Enthusiast",
+  "Exploring Biology + Data"
+];
+
+let i = 0;
+let j = 0;
+let current = "";
+
+function type() {
+  if (j < words[i].length) {
+    current += words[i][j];
+    document.getElementById("typewriter").textContent = current;
+    j++;
+    setTimeout(type, 80);
+  } else {
+    setTimeout(() => {
+      current = "";
+      j = 0;
+      i = (i + 1) % words.length;
+      type();
+    }, 2000);
+  }
+}
+
+type();
+
 // PARTICLES
 const container = document.querySelector('.particles');
 
