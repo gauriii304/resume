@@ -1,7 +1,9 @@
-// MOUSE FOLLOWER
+// SPOTLIGHT
+const spotlight = document.getElementById("spotlight");
+
 document.addEventListener("mousemove", (e) => {
-  document.documentElement.style.setProperty("--x", `${e.clientX}px`);
-  document.documentElement.style.setProperty("--y", `${e.clientY}px`);
+  spotlight.style.left = `${e.clientX}px`;
+  spotlight.style.top = `${e.clientY}px`;
 });
 
 // PROGRESS BAR
@@ -16,33 +18,44 @@ window.addEventListener("scroll", () => {
 });
 
 // TYPEWRITER
-const words = [
-  "Plant Biology Student",
-  "Research Enthusiast",
-  "Exploring Biology + Data"
-];
+document.addEventListener("DOMContentLoaded", () => {
+  const words = [
+    "Plant Biology Student",
+    "Research Enthusiast",
+    "Exploring Biology + Data"
+  ];
 
-let i = 0;
-let j = 0;
-let current = "";
+  let wordIndex = 0;
+  let charIndex = 0;
+  let deleting = false;
 
-function type() {
-  if (j < words[i].length) {
-    current += words[i][j];
-    document.getElementById("typewriter").textContent = current;
-    j++;
-    setTimeout(type, 80);
-  } else {
-    setTimeout(() => {
-      current = "";
-      j = 0;
-      i = (i + 1) % words.length;
-      type();
-    }, 2000);
+  const el = document.getElementById("typewriter");
+
+  function type() {
+    const current = words[wordIndex];
+
+    if (!deleting) {
+      el.textContent = current.slice(0, ++charIndex);
+
+      if (charIndex === current.length) {
+        deleting = true;
+        setTimeout(type, 1500);
+        return;
+      }
+    } else {
+      el.textContent = current.slice(0, --charIndex);
+
+      if (charIndex === 0) {
+        deleting = false;
+        wordIndex = (wordIndex + 1) % words.length;
+      }
+    }
+
+    setTimeout(type, deleting ? 40 : 90);
   }
-}
 
-type();
+  type();
+});
 
 // PARTICLES
 const container = document.querySelector('.particles');
