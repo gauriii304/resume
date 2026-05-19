@@ -6,11 +6,13 @@
   <title>Gauri Maheshwari</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div id="particles"></div>
+
   <nav id="navbar">
     <div class="nav-inner">
       <a href="#hero" class="nav-logo">Gauri<span class="logo-dot">.</span></a>
@@ -46,33 +48,31 @@
     <div class="scroll-indicator">⌄</div>
   </section>
 
-  <div class="section-divider"><svg viewBox="0 0 1200 40" preserveAspectRatio="none"><path d="M0,20 L1200,20" stroke="currentColor" stroke-width="0.5" opacity="0.15"/><path d="M0,30 L1200,30" stroke="currentColor" stroke-width="0.5" opacity="0.08"/><circle cx="600" cy="20" r="3" fill="currentColor" opacity="0.15"/></svg></div>
-
   <section id="about">
     <div class="section-header">
       <span class="section-number">01</span>
       <h2 class="section-title">About Me</h2>
     </div>
     <div class="about-grid">
-      <div class="about-text">
+      <div class="about-text pop-up">
         <p>I'm <strong>Gauri Maheshwari</strong>, a Biology-Chemistry pre-majors student in my 2nd year of the Integrated BS-MS programme at <strong>IISER Mohali</strong>. My journey began with a fascination for understanding how molecules shape life — from the quantum dance of electrons in a spectroscopic measurement to the elegant complexity of ecological networks.</p>
         <p>I believe the most meaningful science happens at the intersection of disciplines — where chemistry meets biology, where data meets discovery, where curiosity meets rigor. I thrive on learning new techniques, whether analyzing plant functional traits in the Western Ghats or exploring satellite interferometry.</p>
         <p>I'm actively seeking research opportunities in ecology, spectroscopy, or interdisciplinary science. If you're working on something fascinating, let's talk.</p>
       </div>
-      <div class="about-stats">
-        <div class="stat-card">
+      <div class="about-stats pop-up delay-1">
+        <div class="stat-card card">
           <div class="stat-number">9.43</div>
           <div class="stat-label">CPI (3 semesters)</div>
         </div>
-        <div class="stat-card">
+        <div class="stat-card card">
           <div class="stat-number">98.3%</div>
           <div class="stat-label">Class 12 (Inter)</div>
         </div>
-        <div class="stat-card">
+        <div class="stat-card card">
           <div class="stat-number">97.6%</div>
           <div class="stat-label">Class 10 (Matric)</div>
         </div>
-        <div class="stat-card">
+        <div class="stat-card card">
           <div class="stat-number">3+</div>
           <div class="stat-label">Projects</div>
         </div>
@@ -80,27 +80,25 @@
     </div>
   </section>
 
-  <div class="section-divider"><svg viewBox="0 0 1200 40" preserveAspectRatio="none"><path d="M0,20 L1200,20" stroke="currentColor" stroke-width="0.5" opacity="0.15"/><path d="M0,30 L1200,30" stroke="currentColor" stroke-width="0.5" opacity="0.08"/><circle cx="600" cy="20" r="3" fill="currentColor" opacity="0.15"/></svg></div>
-
   <section id="education">
     <div class="section-header">
       <span class="section-number">02</span>
       <h2 class="section-title">Education</h2>
     </div>
     <div class="edu-grid">
-      <div class="edu-card featured">
+      <div class="edu-card card featured pop-up">
         <span class="edu-year">2024 — Present</span>
         <h3>Integrated BS-MS Dual Degree</h3>
         <p class="edu-inst">IISER Mohali</p>
         <p class="edu-desc">Biology-Chemistry pre-majors. CPI: 9.43 across 3 semesters. Coursework spans genetics, evolution, spectroscopy, soft matter, statistics, and programming.</p>
       </div>
-      <div class="edu-card">
+      <div class="edu-card card pop-up delay-1">
         <span class="edu-year">2022 — 2024</span>
         <h3>TSBIE Inter (Class 11 & 12)</h3>
         <p class="edu-inst">Excellencia Junior College, Hyderabad</p>
         <p class="edu-desc">Percentage: 98.3%. Strong foundation in biology, chemistry, and physics.</p>
       </div>
-      <div class="edu-card">
+      <div class="edu-card card pop-up delay-2">
         <span class="edu-year">2022</span>
         <h3>CBSE Class 10 (Matriculation)</h3>
         <p class="edu-inst">DAV Public School, Ludhiana, Punjab</p>
@@ -109,14 +107,12 @@
     </div>
   </section>
 
-  <div class="section-divider"><svg viewBox="0 0 1200 40" preserveAspectRatio="none"><path d="M0,20 L1200,20" stroke="currentColor" stroke-width="0.5" opacity="0.15"/><path d="M0,30 L1200,30" stroke="currentColor" stroke-width="0.5" opacity="0.08"/><circle cx="600" cy="20" r="3" fill="currentColor" opacity="0.15"/></svg></div>
-
   <section id="experience">
     <div class="section-header">
       <span class="section-number">03</span>
       <h2 class="section-title">Experience</h2>
     </div>
-    <div class="exp-card">
+    <div class="exp-card card pop-up">
       <div class="exp-top">
         <span class="exp-date">May 2025 — July 2025</span>
         <span class="exp-badge">Past</span>
@@ -131,7 +127,7 @@
         <span>Field Ecology</span>
       </div>
     </div>
-    <div class="exp-card">
+    <div class="exp-card card pop-up delay-1">
       <div class="exp-top">
         <span class="exp-date">Present — Ongoing</span>
         <span class="exp-badge ongoing">Ongoing</span>
@@ -147,15 +143,13 @@
     </div>
   </section>
 
-  <div class="section-divider"><svg viewBox="0 0 1200 40" preserveAspectRatio="none"><path d="M0,20 L1200,20" stroke="currentColor" stroke-width="0.5" opacity="0.15"/><path d="M0,30 L1200,30" stroke="currentColor" stroke-width="0.5" opacity="0.08"/><circle cx="600" cy="20" r="3" fill="currentColor" opacity="0.15"/></svg></div>
-
   <section id="projects">
     <div class="section-header">
       <span class="section-number">04</span>
       <h2 class="section-title">Projects</h2>
     </div>
     <div class="projects-grid">
-      <div class="project-card">
+      <div class="project-card card pop-up">
         <div class="card-icon"><i class="fas fa-satellite"></i></div>
         <h3>Satellite Interferometry</h3>
         <p class="project-sub">Robotics Club — Foundation Day Project</p>
@@ -166,7 +160,7 @@
           <span>Outreach</span>
         </div>
       </div>
-      <div class="project-card">
+      <div class="project-card card pop-up delay-1">
         <div class="card-icon"><i class="fas fa-book-open"></i></div>
         <h3>Meraki — Annual Science Magazine</h3>
         <p class="project-sub">Design Team, 2025 & 2026</p>
@@ -176,7 +170,7 @@
           <span>Science Communication</span>
         </div>
       </div>
-      <div class="project-card">
+      <div class="project-card card pop-up delay-2">
         <div class="card-icon"><i class="fas fa-seedling"></i></div>
         <h3>Horticulture Redevelopment</h3>
         <p class="project-sub">Committee Project, 2025</p>
@@ -189,15 +183,13 @@
     </div>
   </section>
 
-  <div class="section-divider"><svg viewBox="0 0 1200 40" preserveAspectRatio="none"><path d="M0,20 L1200,20" stroke="currentColor" stroke-width="0.5" opacity="0.15"/><path d="M0,30 L1200,30" stroke="currentColor" stroke-width="0.5" opacity="0.08"/><circle cx="600" cy="20" r="3" fill="currentColor" opacity="0.15"/></svg></div>
-
   <section id="skills">
     <div class="section-header">
       <span class="section-number">05</span>
       <h2 class="section-title">Skills</h2>
     </div>
     <div class="skills-grid">
-      <div class="skill-cat">
+      <div class="skill-cat card pop-up">
         <h3><i class="fas fa-chart-line"></i> Data Analysis</h3>
         <div class="skill-tags">
           <span>R (ggplot2)</span>
@@ -207,7 +199,7 @@
           <span>Microsoft Excel</span>
         </div>
       </div>
-      <div class="skill-cat">
+      <div class="skill-cat card pop-up delay-1">
         <h3><i class="fas fa-microscope"></i> Lab Techniques</h3>
         <div class="skill-tags">
           <span>Pipetting</span>
@@ -220,7 +212,7 @@
           <span>LECO Prep</span>
         </div>
       </div>
-      <div class="skill-cat">
+      <div class="skill-cat card pop-up delay-2">
         <h3><i class="fas fa-wave-square"></i> Spectroscopy & Imaging</h3>
         <div class="skill-tags">
           <span>NMR</span>
@@ -230,7 +222,7 @@
           <span>ImageJ</span>
         </div>
       </div>
-      <div class="skill-cat">
+      <div class="skill-cat card pop-up delay-3">
         <h3><i class="fas fa-feather"></i> Professional</h3>
         <div class="skill-tags">
           <span>Scientific Writing</span>
@@ -243,31 +235,27 @@
     </div>
   </section>
 
-  <div class="section-divider"><svg viewBox="0 0 1200 40" preserveAspectRatio="none"><path d="M0,20 L1200,20" stroke="currentColor" stroke-width="0.5" opacity="0.15"/><path d="M0,30 L1200,30" stroke="currentColor" stroke-width="0.5" opacity="0.08"/><circle cx="600" cy="20" r="3" fill="currentColor" opacity="0.15"/></svg></div>
-
   <section id="achievements">
     <div class="section-header">
       <span class="section-number">06</span>
       <h2 class="section-title">Leadership & Achievements</h2>
     </div>
     <div class="achieve-grid">
-      <div class="achieve-card"><i class="fas fa-trophy"></i><h3>Academic Excellence Award</h3><p>IISER Mohali — 2026</p></div>
-      <div class="achieve-card"><i class="fas fa-paint-brush"></i><h3>Design Head</h3><p>Tattva Science Fest — 2026</p></div>
-      <div class="achieve-card"><i class="fas fa-pen-fancy"></i><h3>Junior Editor</h3><p>Manthan Magazine</p></div>
-      <div class="achieve-card"><i class="fas fa-users"></i><h3>Core Committee</h3><p>Chemistry, Ecology & Social Welfare Clubs</p></div>
-      <div class="achieve-card"><i class="fas fa-music"></i><h3>Core Volunteer</h3><p>Insomnia Cultural Fest — 2025</p></div>
-      <div class="achieve-card"><i class="fas fa-dna"></i><h3>Relevant Coursework</h3><p>Python, Stats, Genetics, Spectroscopy, Soft Matter</p></div>
+      <div class="achieve-card card pop-up"><i class="fas fa-trophy"></i><h3>Academic Excellence Award</h3><p>IISER Mohali — 2026</p></div>
+      <div class="achieve-card card pop-up delay-1"><i class="fas fa-paint-brush"></i><h3>Design Head</h3><p>Tattva Science Fest — 2026</p></div>
+      <div class="achieve-card card pop-up delay-2"><i class="fas fa-pen-fancy"></i><h3>Junior Editor</h3><p>Manthan Magazine</p></div>
+      <div class="achieve-card card pop-up delay-3"><i class="fas fa-users"></i><h3>Core Committee</h3><p>Chemistry, Ecology & Social Welfare Clubs</p></div>
+      <div class="achieve-card card pop-up delay-4"><i class="fas fa-music"></i><h3>Core Volunteer</h3><p>Insomnia Cultural Fest — 2025</p></div>
+      <div class="achieve-card card pop-up delay-4"><i class="fas fa-dna"></i><h3>Relevant Coursework</h3><p>Python, Stats, Genetics, Spectroscopy, Soft Matter</p></div>
     </div>
   </section>
-
-  <div class="section-divider"><svg viewBox="0 0 1200 40" preserveAspectRatio="none"><path d="M0,20 L1200,20" stroke="currentColor" stroke-width="0.5" opacity="0.15"/><path d="M0,30 L1200,30" stroke="currentColor" stroke-width="0.5" opacity="0.08"/><circle cx="600" cy="20" r="3" fill="currentColor" opacity="0.15"/></svg></div>
 
   <section id="blog">
     <div class="section-header">
       <span class="section-number">07</span>
       <h2 class="section-title">Blog</h2>
     </div>
-    <div class="blog-form-wrap">
+    <div class="blog-form-wrap card pop-up">
       <h3><i class="fas fa-pen-fancy"></i> Write a note</h3>
       <p class="blog-hint">Capture your thoughts — a technique you learned, a paper you read, or an idea that struck you.</p>
       <form id="blogForm">
@@ -284,37 +272,35 @@
     </div>
   </section>
 
-  <div class="section-divider"><svg viewBox="0 0 1200 40" preserveAspectRatio="none"><path d="M0,20 L1200,20" stroke="currentColor" stroke-width="0.5" opacity="0.15"/><path d="M0,30 L1200,30" stroke="currentColor" stroke-width="0.5" opacity="0.08"/><circle cx="600" cy="20" r="3" fill="currentColor" opacity="0.15"/></svg></div>
-
   <section id="contact">
     <div class="section-header">
       <span class="section-number">08</span>
       <h2 class="section-title">Let's Connect</h2>
     </div>
-    <p class="contact-desc">Open to conversations about science, research, or a warm cup of chai. Reach out anytime.</p>
+    <p class="contact-desc pop-up">Open to conversations about science, research, or a warm cup of chai. Reach out anytime.</p>
     <div class="contact-grid">
-      <a href="mailto:ms24275@iisermohali.com" class="contact-item">
+      <a href="mailto:ms24275@iisermohali.com" class="contact-item card pop-up delay-1">
         <i class="fas fa-envelope"></i>
         <div>
           <span class="c-label">Institute Email</span>
           <span class="c-value">ms24275@iisermohali.com</span>
         </div>
       </a>
-      <a href="mailto:gaurimahe29@gmail.com" class="contact-item">
+      <a href="mailto:gaurimahe29@gmail.com" class="contact-item card pop-up delay-2">
         <i class="fas fa-envelope"></i>
         <div>
           <span class="c-label">Personal Email</span>
           <span class="c-value">gaurimahe29@gmail.com</span>
         </div>
       </a>
-      <a href="tel:+919014150301" class="contact-item">
+      <a href="tel:+919014150301" class="contact-item card pop-up delay-3">
         <i class="fas fa-phone"></i>
         <div>
           <span class="c-label">Phone</span>
           <span class="c-value">+91 90141 50301</span>
         </div>
       </a>
-      <a href="https://www.linkedin.com/in/gauri-maheshwari-1983a6356" target="_blank" class="contact-item">
+      <a href="https://www.linkedin.com/in/gauri-maheshwari-1983a6356" target="_blank" class="contact-item card pop-up delay-4">
         <i class="fab fa-linkedin-in"></i>
         <div>
           <span class="c-label">LinkedIn</span>
@@ -325,7 +311,6 @@
   </section>
 
   <footer>
-    <div class="footer-grid-svg"><svg viewBox="0 0 1200 40" preserveAspectRatio="none"><path d="M0,20 L1200,20" stroke="currentColor" stroke-width="0.5" opacity="0.15"/><path d="M0,30 L1200,30" stroke="currentColor" stroke-width="0.5" opacity="0.08"/><circle cx="600" cy="20" r="3" fill="currentColor" opacity="0.15"/></svg></div>
     <p>crafted with <span class="accent">curiosity</span> · © 2026 Gauri Maheshwari</p>
     <div class="footer-social">
       <a href="mailto:gaurimahe29@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>

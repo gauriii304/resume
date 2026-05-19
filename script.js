@@ -1,3 +1,17 @@
+// PARTICLES
+const particlesContainer = document.getElementById('particles');
+for (let i = 0; i < 30; i++) {
+  const p = document.createElement('div');
+  p.className = 'particle';
+  p.style.left = Math.random() * 100 + '%';
+  p.style.top = Math.random() * 100 + '%';
+  p.style.animationDelay = Math.random() * 12 + 's';
+  p.style.animationDuration = (10 + Math.random() * 8) + 's';
+  p.style.width = (2 + Math.random() * 3) + 'px';
+  p.style.height = p.style.width;
+  particlesContainer.appendChild(p);
+}
+
 const toggle = document.getElementById('navToggle');
 const links = document.getElementById('navLinks');
 
